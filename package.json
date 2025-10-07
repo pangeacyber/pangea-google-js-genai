@@ -1,0 +1,59 @@
+{
+  "name": "@pangeacyber/google-genai",
+  "version": "0.0.0",
+  "description": "A wrapper around the Google GenAI JavaScript SDK",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.cts",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "engines": {
+    "node": "22 || >=24"
+  },
+  "scripts": {
+    "attw": "attw --pack",
+    "publint": "publint --strict",
+    "build": "tsdown",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "@google/genai": "^1.22.0",
+    "pangea-node-sdk": "^5.6.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.2",
+    "@biomejs/biome": "2.2.5",
+    "@kenan/biome-config": "1.0.4",
+    "@tsconfig/node22": "22.0.2",
+    "@types/node": "22.18.6",
+    "lefthook": "1.13.6",
+    "publint": "0.3.14",
+    "tsdown": "0.15.6",
+    "typescript": "5.9.3"
+  }
+}
