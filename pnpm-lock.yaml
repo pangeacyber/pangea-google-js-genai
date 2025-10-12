@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@google/genai':
-        specifier: ^1.22.0
-        version: 1.22.0
+        specifier: ^1.23.0
+        version: 1.24.0
       pangea-node-sdk:
         specifier: ^5.6.0
         version: 5.6.0
@@ -157,8 +157,8 @@ packages:
   '@emnapi/wasi-threads@1.1.0':
     resolution: {integrity: sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ==}
 
-  '@google/genai@1.22.0':
-    resolution: {integrity: sha512-siETS3zTm3EGpTT4+BFc1z20xXBYfueD3gCYfxkOjuAKRk8lt8TJevDHi3zepn1oSI6NhG/LZvy0i+Q3qheObg==}
+  '@google/genai@1.24.0':
+    resolution: {integrity: sha512-e3jZF9Dx3dDaDCzygdMuYByHI2xJZ0PaD3r2fRgHZe2IOwBnmJ/Tu5Lt/nefTCxqr1ZnbcbQK9T13d8U/9UMWg==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@modelcontextprotocol/sdk': ^1.11.4
@@ -1002,7 +1002,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@google/genai@1.22.0':
+  '@google/genai@1.24.0':
     dependencies:
       google-auth-library: 9.15.1
       ws: 8.18.3
