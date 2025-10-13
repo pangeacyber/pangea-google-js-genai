@@ -126,7 +126,10 @@ export class PangeaModels {
       }
     }
 
-    const genaiResponse = await this.googleModels.generateContent(params);
+    const genaiResponse = await this.googleModels.generateContent({
+      ...params,
+      contents: normalizedContents,
+    });
 
     if (genaiResponse.text) {
       const guardOutputResponse = await this.aiGuardClient.guard({
