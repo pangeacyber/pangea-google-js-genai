@@ -6,6 +6,10 @@
     "access": "public"
   },
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pangeacyber/pangea-google-js-genai.git"
+  },
   "type": "commonjs",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.cts",
